@@ -1,0 +1,23 @@
+{
+    "pendientes": [
+    {
+         "id" : 1,
+         "nombre" : "Lukas",
+         "empresa" : "Código con Lukas",
+         "trabajo" : "Desarrollador Web"
+    },
+    {
+         "id" : 2,
+         "nombre" : "Chocolate",
+         "empresa" : "Código con Lukas",
+         "trabajo" : "Diseñadora"
+    },
+    {
+         "id" : 3,
+         "nombre" : "Tony",
+         "empresa" : "Código con Lukas",
+         "trabajo" : "Aplicaciones Móviles"
+    }
+], 
+"nadie":[]
+}

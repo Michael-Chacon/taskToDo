@@ -1,7 +1,10 @@
+import { getData } from "../Api/core.js";
+
 let pendientes = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   getPendientes();
+  getData();
 });
 
 async function getPendientes() {
@@ -10,7 +13,6 @@ async function getPendientes() {
   hola();
 }
 function hola() {
-  //   console.log(pendientes);
   return pendientes;
 }
 
@@ -21,11 +23,9 @@ function obtenerDatos(e) {
   e.preventDefault();
   const dataForm = new FormData(form);
   const tal = Object.fromEntries(dataForm);
-  //   console.log(tal);
 
   const getjson = JSON.stringify(tal);
   console.log(getjson);
-  //   return getjson;
   const datos = hola();
   datos.push(tal);
   console.log(datos);

@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" type="module" defer></script>
-    <title>Inicio del proyecto</title>
+    <title>Task to do</title>
   </head>
   <body>
     <main class="container">
       <section class="form">
         <form action="#" id="formulario">
-          <input type="text" name="tarea" class="tarea" placeholder="Tarea" />
+          <input
+            type="text"
+            name="tarea"
+            class="tarea"
+            placeholder="Tarea"
+            value="Morir :)"
+          />
           <div class="fechas">
             <label for="inicio">Fecha inicio:</label>
-            <input type="date" name="inicio" id="inicio" />
+            <input type="date" name="inicio" value="2023-01-01" id="inicio" />
 
             <label for="fin">Fecha fin:</label>
-            <input type="date" name="fin" id="fin" />
+            <input type="date" value="2024-03-02" name="fin" id="fin" />
           </div>
           <label for="responsable">Responsable</label>
           <select name="responsable" id="responsable">
-            <option value="lukas">lukas</option>
+            <option value="lukas" selected>lukas</option>
             <option value="tony">tony</option>
             <option value="snoopy">snoopy</option>
           </select>

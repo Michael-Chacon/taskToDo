@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" type="module" defer></script>
+    <title>Inicio del proyecto</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="form">
+        <form action="#" id="formulario">
+          <input type="text" name="tarea" class="tarea" placeholder="Tarea" />
+          <div class="fechas">
+            <label for="inicio">Fecha inicio:</label>
+            <input type="date" name="inicio" id="inicio" />
+
+            <label for="fin">Fecha fin:</label>
+            <input type="date" name="fin" id="fin" />
+          </div>
+          <label for="responsable">Responsable</label>
+          <select name="responsable" id="responsable">
+            <option value="lukas">lukas</option>
+            <option value="tony">tony</option>
+            <option value="snoopy">snoopy</option>
+          </select>
+          <div class="prioridad">
+            <label for="urg">Urgene:</label>
+            <input type="radio" name="prioridad" value="urgente" id="urg" />
+            <label for="nurg">No urgente</label>
+            <input type="radio" name="prioridad" value="noUrgente" id="nurg" />
+          </div>
+          <button type="submit">Registrar tarea</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

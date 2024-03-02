@@ -22,4 +22,32 @@ const getData = async () => {
   }
 };
 
-export { getData as getData };
+const postData = (data) => {
+  fetch(`${URL_API}/pendientes`, {
+    method: "POST",
+    headers: myHeader,
+    body: JSON.stringify(data),
+  }).catch((error) => console.log(error));
+};
+
+const deleteData = (id) => {
+  // console.log(id);
+  fetch(`${URL_API}/pendientes/${id}`, {
+    method: "DELETE",
+    headers: myHeader,
+  })
+    .then((res) => {
+      console.log(res.status);
+      if (!res.ok) {
+        throw new Error("Error al eliminar a" + id);
+      }
+      return res.json();
+    })
+    .then((res) => {
+      // console.log(res)
+      return res;
+    })
+    .catch((error) => console.log(error));
+};
+
+export { getData as getData, postData as postData, deleteData as deleteData };

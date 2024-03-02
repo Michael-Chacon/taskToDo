@@ -1,23 +1,65 @@
 {
-    "pendientes": [
+  "pendientes": [
     {
-         "id" : 1,
-         "nombre" : "Lukas",
-         "empresa" : "Código con Lukas",
-         "trabajo" : "Desarrollador Web"
+      "id": "1",
+      "nombre": "Lukas",
+      "empresa": "Código con Lukas",
+      "trabajo": "Desarrollador Web"
     },
     {
-         "id" : 2,
-         "nombre" : "Chocolate",
-         "empresa" : "Código con Lukas",
-         "trabajo" : "Diseñadora"
+      "id": "2",
+      "nombre": "Chocolate",
+      "empresa": "Código con Lukas",
+      "trabajo": "Diseñadora"
     },
     {
-         "id" : 3,
-         "nombre" : "Tony",
-         "empresa" : "Código con Lukas",
-         "trabajo" : "Aplicaciones Móviles"
+      "id": "3",
+      "nombre": "Tony",
+      "empresa": "Código con Lukas",
+      "trabajo": "Aplicaciones Móviles"
+    },
+    {
+      "id": "368e",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "368e",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "477d",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "324a",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "45a7",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "a4ad",
+      "tarea": "Morir :)",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
     }
-], 
-"nadie":[]
+  ],
+  "nadie": []
 }

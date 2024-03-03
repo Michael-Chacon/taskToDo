@@ -9,9 +9,42 @@
     font-style: normal;
 }
 
+header{
+    border:1px solid red;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+header ul {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li{
+    border:1px solid red;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+header ul li:hover{
+  cursor: pointer;
+  border:1px solid teal;
+}
+
 main{
     min-height: 100vh;
+    padding: 20px;
 }
+
 dialog {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -99,7 +132,7 @@ form .botones{
     align-items: center;
 }
 
-form .botones .btn{
+form .botones .btn, .mostarModal{
     font-weight: 600;
     border: none;
     padding: 10px 20px;
@@ -112,7 +145,7 @@ form .botones .cancelar{
     transition: all ease 0.7s;
 }
 
-form .botones .guardar{
+form .botones .guardar, .mostarModal{
     background-color: #836FFF ;
     color: white;
     transition: all ease 0.7s;
@@ -126,6 +159,11 @@ form .botones .guardar:hover{
 form .botones .cancelar:hover{
     background-color: #F6F5F5 ;
     color: black;
+    cursor: pointer;
+}
+
+.mostarModal:hover{
+    background-color: #6420AA;
     cursor: pointer;
 }
   

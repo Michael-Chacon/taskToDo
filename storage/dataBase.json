@@ -1,14 +1,6 @@
 {
   "pendientes": [
     {
-      "id": "4229",
-      "tarea": "Todo mal",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "snoopy",
-      "prioridad": "urgente"
-    },
-    {
       "id": "1ed2",
       "tarea": "",
       "inicio": "2023-01-01",
@@ -58,6 +50,14 @@
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
+    },
+    {
+      "id": "981d",
+      "tarea": "Tal cosa",
+      "inicio": "2023-01-12",
+      "fin": "2024-03-31",
+      "responsable": "tony",
+      "prioridad": "urgente"
     }
   ],
   "fallidas": [
@@ -107,6 +107,14 @@
     {
       "id": "96fb",
       "tarea": "",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "snoopy",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "4229",
+      "tarea": "Todo mal",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "snoopy",

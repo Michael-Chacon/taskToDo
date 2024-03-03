@@ -16,7 +16,6 @@
             name="tarea"
             class="tarea"
             placeholder="Tarea"
-            value="Morir :)"
           />
           <div class="fechas">
             <label for="inicio">Fecha inicio:</label>
@@ -39,6 +38,19 @@
           </div>
           <input type="submit">Registrar tarea</input>
         </form>
+      </section>
+      <section class="showTasks">
+        <h3>Tareas pendientes</h3>
+        <ol class="tasks" id="tasks">
+        </ol>
+      </section>
+      <section class="cumplidas">
+        <h3>Complidas</h3>
+        <ol class="tasks" id="tasksOk">
+        </ol>
+      </section>
+      <section class="fallidas" id="tasksFaild">
+        <h3>Fallidas</h3>
       </section>
     </main>
   </body>

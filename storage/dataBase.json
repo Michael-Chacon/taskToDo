@@ -1,65 +1,85 @@
 {
-  "pendientes": [
+  "pendientes": [],
+  "cumplidas": [
     {
-      "id": "1",
-      "nombre": "Lukas",
-      "empresa": "Código con Lukas",
-      "trabajo": "Desarrollador Web"
-    },
-    {
-      "id": "2",
-      "nombre": "Chocolate",
-      "empresa": "Código con Lukas",
-      "trabajo": "Diseñadora"
-    },
-    {
-      "id": "3",
-      "nombre": "Tony",
-      "empresa": "Código con Lukas",
-      "trabajo": "Aplicaciones Móviles"
-    },
-    {
-      "id": "368e",
-      "tarea": "Morir :)",
+      "id": "dc31",
+      "tarea": "pendientes",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
     },
     {
-      "id": "368e",
-      "tarea": "Morir :)",
+      "id": "3b81",
+      "tarea": "prueba",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "snoopy"
+    },
+    {
+      "id": "dc31",
+      "tarea": "pendientes",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
     },
     {
-      "id": "477d",
-      "tarea": "Morir :)",
+      "id": "35ae",
+      "tarea": "Lukas",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
     },
     {
-      "id": "324a",
-      "tarea": "Morir :)",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "45a7",
-      "tarea": "Morir :)",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "a4ad",
-      "tarea": "Morir :)",
+      "id": "80fe",
+      "tarea": "NEW",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
     }
   ],
-  "nadie": []
+  "fallidas": [
+    {
+      "id": "35ae",
+      "tarea": "Lukas",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "3b81",
+      "tarea": "prueba",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "snoopy"
+    },
+    {
+      "id": "dc31",
+      "tarea": "pendientes",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "1891",
+      "tarea": "tal otro",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "tony",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "1aef",
+      "tarea": "tal",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "tony"
+    },
+    {
+      "id": "af16",
+      "tarea": "OLD",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    }
+  ]
 }

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main{
+    min-height: 100vh;
+}
+dialog {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 5;
+    border: 1px solid white;
+    height: 70vh;
+    width: 35%;
+}
+
+.form{
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+
+form{
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .tarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #CCD3CA;
+}
+  
+
+form .fechas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    
+}
+
+form .fechas .padre-fecha{
+    display: flex;
+    flex-direction: column;
+}
+form .fechas .padre-fecha input{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #CCD3CA;
+    font-size: 16px;
+}
+
+form .responsable{
+    padding: 15px;
+    border: 1px solid #CCD3CA;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select option {
+    font-family: Arial, sans-serif; /* Cambia la familia de fuente */
+    font-size: 16px; /* Cambia el tamaño de la fuente */
+    font-weight: 400; /* Cambia el peso de la fuente */
+}
+
+form .prioridad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    font-size: 18px;
+}
+
+form .botones{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+form .botones .btn{
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+form .botones .cancelar{
+    background-color: white ;
+    color: #B5C0D0;
+    transition: all ease 0.7s;
+}
+
+form .botones .guardar{
+    background-color: #836FFF ;
+    color: white;
+    transition: all ease 0.7s;
+}
+
+form .botones .guardar:hover{
+    background-color: #6420AA;
+    cursor: pointer;
+}
+
+form .botones .cancelar:hover{
+    background-color: #F6F5F5 ;
+    color: black;
+    cursor: pointer;
+}
+  
+
+/* https://themes.getbootstrap.com/preview/?theme_id=23693 */

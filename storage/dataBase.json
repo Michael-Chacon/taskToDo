@@ -1,5 +1,28 @@
 {
-  "pendientes": [],
+  "pendientes": [
+    {
+      "id": "4229",
+      "tarea": "Todo mal",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "snoopy",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "1ed2",
+      "tarea": "",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    },
+    {
+      "id": "5c35",
+      "tarea": "",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "lukas"
+    }
+  ],
   "cumplidas": [
     {
       "id": "dc31",
@@ -80,6 +103,14 @@
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "lukas"
+    },
+    {
+      "id": "96fb",
+      "tarea": "",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "snoopy",
+      "prioridad": "urgente"
     }
   ]
 }

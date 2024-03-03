@@ -8,37 +8,51 @@
     <title>Task to do</title>
   </head>
   <body>
-    <main class="container">
+    <dialog open>
       <section class="form">
         <form action="#" id="formulario">
+          <label for="tarea">Tarea</label>
           <input
             type="text"
             name="tarea"
             class="tarea"
-            placeholder="Tarea"
+            id="tarea"
           />
           <div class="fechas">
-            <label for="inicio">Fecha inicio:</label>
-            <input type="date" name="inicio" value="2023-01-01" id="inicio" />
-
-            <label for="fin">Fecha fin:</label>
-            <input type="date" value="2024-03-02" name="fin" id="fin" />
+            <div class="padre-fecha">
+              <label for="inicio">Fecha inicio:</label>
+              <input type="date" name="inicio" value="2023-01-01" id="inicio" />
+            </div>
+            <div class="padre-fecha">
+              <label for="fin">Fecha fin:</label>
+              <input type="date" value="2024-03-02" name="fin" id="fin" />
+            </div>
           </div>
           <label for="responsable">Responsable</label>
-          <select name="responsable" id="responsable">
+          <select name="responsable" id="responsable" class="responsable">
             <option value="lukas" selected>lukas</option>
             <option value="tony">tony</option>
             <option value="snoopy">snoopy</option>
           </select>
           <div class="prioridad">
-            <label for="urg">Urgene:</label>
-            <input type="radio" name="prioridad" value="urgente" id="urg" />
-            <label for="nurg">No urgente</label>
-            <input type="radio" name="prioridad" value="noUrgente" id="nurg" />
+            <div>
+              <label for="urg">Urgene:</label>
+              <input type="radio" name="prioridad" value="urgente" id="urg" />
+            </div>
+            <div>
+              <label for="nurg">No urgente</label>
+              <input type="radio" name="prioridad" value="noUrgente" id="nurg" />
+            </div>
           </div>
-          <input type="submit">Registrar tarea</input>
+          <div class="botones">
+            <button class="btn cancelar">Cancelar</button>
+            <input class="btn guardar" type="submit" value="Registrar tarea"></input>
+          </div>
         </form>
       </section>
+    </dialog>
+    <main class="container">
+
       <section class="showTasks">
         <h3>Tareas pendientes</h3>
         <ol class="tasks" id="tasks">

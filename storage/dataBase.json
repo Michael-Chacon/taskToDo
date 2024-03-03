@@ -1,20 +1,14 @@
 {
   "pendientes": [
     {
-      "id": "1ed2",
-      "tarea": "",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "5c35",
-      "tarea": "",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    }
-  ],
+    "id": "2e0f",
+    "tarea": "Tarea real",
+    "inicio": "2023-01-01",
+    "fin": "2024-03-13",
+    "responsable": "snoopy",
+    "prioridad": "urgente"
+  }
+],
   "cumplidas": [
     {
       "id": "dc31",
@@ -29,35 +23,6 @@
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "snoopy"
-    },
-    {
-      "id": "dc31",
-      "tarea": "pendientes",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "35ae",
-      "tarea": "Lukas",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "80fe",
-      "tarea": "NEW",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "981d",
-      "tarea": "Tal cosa",
-      "inicio": "2023-01-12",
-      "fin": "2024-03-31",
-      "responsable": "tony",
-      "prioridad": "urgente"
     }
   ],
   "fallidas": [
@@ -69,55 +34,11 @@
       "responsable": "lukas"
     },
     {
-      "id": "3b81",
-      "tarea": "prueba",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "snoopy"
-    },
-    {
-      "id": "dc31",
-      "tarea": "pendientes",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
       "id": "1891",
       "tarea": "tal otro",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "tony",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "1aef",
-      "tarea": "tal",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "tony"
-    },
-    {
-      "id": "af16",
-      "tarea": "OLD",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "lukas"
-    },
-    {
-      "id": "96fb",
-      "tarea": "",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "snoopy",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "4229",
-      "tarea": "Todo mal",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "snoopy",
       "prioridad": "urgente"
     }
   ]

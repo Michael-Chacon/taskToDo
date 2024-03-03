@@ -23,72 +23,141 @@ function obtenerDatos(e) {
   postData(tal, "pendientes");
 }
 
-const ul = document.querySelector("#tasks");
-ul.addEventListener("click", detectarBoton);
+const cards = document.querySelector(".cards");
+cards.addEventListener("click", detectarBoton);
 
 function showTask(data) {
   data.forEach((item) => {
-    const li = document.createElement("LI");
-    const btnEnded = document.createElement("BUTTON");
-    const btnFailed = document.createElement("BUTTON");
-    btnEnded.id = item.id;
-    btnEnded.classList.add("btnEnded");
-    btnEnded.textContent = "Ended";
-    btnFailed.id = item.id;
-    btnFailed.classList.add("btnFailed");
-    btnFailed.textContent = "Ended";
-    li.textContent = item.tarea;
-    li.appendChild(btnEnded);
-    li.appendChild(btnFailed);
-    ul.appendChild(li);
+    cards.innerHTML += `
+    <article class="card">
+    <div class="opciones">
+      <i class='bx bx-check btnEnded' id="${item.id}"></i>
+      <small><span class="span-prioridad ${
+        item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
+      } ">${item.prioridad}</span></small>
+      <i class='bx bx-x btnFailed' id="${item.id}"></i>
+    </div>
+    <p class="textTask">${item.tarea}</p>
+    <div class="inicio-fin">
+        <div class="texto-fechas">
+          <p>Inicio</p>
+          <p>${item.inicio}</p>
+        </div>
+        <div class="texto-fechas">
+          <p>Fin</p>
+          <p>${item.fin}</p>
+        </div>
+    </div>
+    <div class="info-responsable">
+      <p>${item.responsable}</p>
+      <img src="storage/img/foto.jpg" alt="" class="foto">
+    </div>
+  </article>
+    `;
+    // const li = document.createElement("LI");
+    // const btnEnded = document.createElement("BUTTON");
+    // const btnFailed = document.createElement("BUTTON");
+    // btnEnded.id = item.id;
+    // btnEnded.classList.add("btnEnded");
+    // btnEnded.textContent = "Ended";
+    // btnFailed.id = item.id;
+    // btnFailed.classList.add("btnFailed");
+    // btnFailed.textContent = "Ended";
+    // li.textContent = item.tarea;
+    // li.appendChild(btnEnded);
+    // li.appendChild(btnFailed);
+    // ul.appendChild(li);
   });
 }
 
-const ol = document.querySelector("#tasksOk");
+const success = document.querySelector("#tasksOk");
 function showTasksEnded(data) {
   data.forEach((item) => {
-    const li = document.createElement("LI");
-    const btnEnd = document.createElement("BUTTON");
-    btnEnd.id = item.id;
-    btnEnd.classList.add("btnEnd");
-    btnEnd.textContent = "Delete";
-    li.textContent = item.tarea;
-    li.appendChild(btnEnd);
-    ol.appendChild(li);
+    success.innerHTML += `
+    <article class="card tar-cumplidas">
+    <div class="opciones">
+      <small><span class="span-prioridad ${
+        item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
+      } ">${item.prioridad}</span></small>
+    </div>
+    <p class="textTask">${item.tarea}</p>
+    <div class="inicio-fin">
+        <div class="texto-fechas">
+          <p>Inicio</p>
+          <p>${item.inicio}</p>
+        </div>
+        <div class="texto-fechas">
+          <p>Fin</p>
+          <p>${item.fin}</p>
+        </div>
+    </div>
+    <div class="info-responsable">
+      <p>${item.responsable}</p>
+      <img src="storage/img/foto.jpg" alt="" class="foto">
+    </div>
+  </article>
+    `;
+    // const li = document.createElement("LI");
+    // const btnEnd = document.createElement("BUTTON");
+    // btnEnd.id = item.id;
+    // btnEnd.classList.add("btnEnd");
+    // btnEnd.textContent = "Delete";
+    // li.textContent = item.tarea;
+    // li.appendChild(btnEnd);
+    // ol.appendChild(li);
   });
 }
 
-const olFail = document.querySelector("#tasksFaild");
+const fail = document.querySelector("#tasksFaild");
 function showTaskFailded(data) {
   data.forEach((item) => {
-    const li = document.createElement("LI");
-    const btnFail = document.createElement("BUTTON");
-    btnFail.id = item.id;
-    btnFail.classList.add("btnFail");
-    btnFail.textContent = "Delete";
-    li.textContent = item.tarea;
-    li.appendChild(btnFail);
-    olFail.appendChild(li);
+    fail.innerHTML += `
+    <article class="card tar-fallidas">
+    <div class="opciones">
+     
+      <small><span class="span-prioridad ${
+        item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
+      } ">${item.prioridad}</span></small>
+      
+    </div>
+    <p class="textTask">${item.tarea}</p>
+    <div class="inicio-fin">
+        <div class="texto-fechas">
+          <p>Inicio</p>
+          <p>${item.inicio}</p>
+        </div>
+        <div class="texto-fechas">
+          <p>Fin</p>
+          <p>${item.fin}</p>
+        </div>
+    </div>
+    <div class="info-responsable">
+      <p>${item.responsable}</p>
+      <img src="storage/img/foto.jpg" alt="" class="foto">
+    </div>
+  </article>
+    `;
   });
 }
 
 async function detectarBoton(e) {
-  const confirmacion = confirm("Seguro?");
-  if (confirmacion) {
-    if (e.target.classList.contains("btnEnded")) {
-      const id = e.target.id;
-      const resultado = await getOne(id);
-      console.log(resultado);
-      postData(resultado, "cumplidas");
-      deleteData(id);
-    } else if (e.target.classList.contains("btnFailed")) {
-      const id = e.target.id;
-      const resultado = await getOne(id);
-      console.log(resultado);
-      postData(resultado, "fallidas");
-      deleteData(id);
-    }
+  // const confirmacion = confirm("Seguro?");
+  // if (confirmacion) {
+  if (e.target.classList.contains("btnEnded")) {
+    const id = e.target.id;
+    console.log(id);
+    const resultado = await getOne(id);
+    console.log(resultado);
+    postData(resultado, "cumplidas");
+    deleteData(id);
+  } else if (e.target.classList.contains("btnFailed")) {
+    const id = e.target.id;
+    const resultado = await getOne(id);
+    console.log(resultado);
+    postData(resultado, "fallidas");
+    deleteData(id);
   }
+  // }
 }
 
 async function getOne(id) {

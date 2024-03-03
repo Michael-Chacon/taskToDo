@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" type="module" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Task to do</title>
   </head>
   <body>
     <header>
-      <ul>
+      <!-- <ul>
         <li id="pendientes">Tareas pendientes</li>
         <li id="cumplidas">Tareas cumplidas</li>
         <li id="fallidas">Tareas fallidas</li>
-      </ul>
-      <button class="mostarModal" >Nueva tarea</button>
+      </ul> -->
+      <button class="mostarModal" ><i class='bx bx-plus'></i>Nueva tarea</button>
     </header>
-    <dialog>
+    <dialog >
       <section class="form">
         <form action="#" id="formulario">
           <label for="tarea">Tarea</label>
@@ -60,19 +61,41 @@
       </section>
     </dialog>
     <main class="container">
-
-      <section class="showTasks">
-        <h3>Tareas pendientes</h3>
-        <ol class="tasks" id="tasks">
-        </ol>
+      <h3>Tareas pendientes</h3>
+      <section class="cards">
+        <!-- <article class="card">
+          <div class="opciones">
+            <i class='bx bx-check'></i>
+            <small><span class="span-prioridad">prioridad</span></small>
+            <i class='bx bx-x'></i>
+          </div>
+          <p class="textTask">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="inicio-fin">
+              <div class="texto-fechas">
+                <p>Inicio</p>
+                <p>2023-01-01</p>
+              </div>
+              <div class="texto-fechas">
+                <p>Fin</p>
+                <p>2023-01-01</p>
+              </div>
+          </div>
+          <div class="info-responsable">
+            <p>Mafe Peña</p>
+            <img src="storage/img/foto.jpg" alt="" class="foto">
+          </div>
+        </article> -->
       </section>
-      <section class="cumplidas">
-        <h3>Complidas</h3>
-        <ol class="tasks" id="tasksOk">
-        </ol>
-      </section>
-      <section class="fallidas" id="tasksFaild">
-        <h3>Fallidas</h3>
+      <section class="cumplidas-fallidas">
+        <section class="cumplidas">
+          <h3>Complidas</h3>
+          <section class="tasks" id="tasksOk">
+          </section>
+        </section>
+        <section class="fallidas">
+          <h3>Fallidas</h3>
+          <section class="tasks" id="tasksFaild"></section>
+        </section>
       </section>
     </main>
   </body>

@@ -166,6 +166,86 @@ form .botones .cancelar:hover{
     background-color: #6420AA;
     cursor: pointer;
 }
-  
+
+.cards, .tasks{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card{
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.card .opciones, .inicio-fin, .info-responsable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.card .opciones .span-prioridad{
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.span-urgente{
+    background-color: #ff5630;
+}
+
+.span-noUrgente{
+    background-color: #36b37e;
+}
+
+.card .inicio-fin .texto-fechas{
+    text-align: center;
+    font-size: 12px;
+}
+
+.card .info-responsable{
+    border-top: 1px solid rgb(202, 200, 200);
+}
+
+.card .info-responsable .foto{
+    object-fit: contain;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.cumplidas-fallidas{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cumplidas, .fallidas{
+    width: 100%;
+    padding: 5px;
+}
+
+.tar-cumplidas{
+    box-shadow: 0px 0px 5px 0px #36b37f9c;
+}
+
+.tar-fallidas{
+    box-shadow: 0px 0px 5px 0px #ff5630b6;
+}
+
+h3{
+    text-align: center;
+    margin: 10px;
+}
 
 /* https://themes.getbootstrap.com/preview/?theme_id=23693 */

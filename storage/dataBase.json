@@ -1,44 +1,71 @@
 {
   "pendientes": [
     {
-    "id": "2e0f",
-    "tarea": "Tarea real",
-    "inicio": "2023-01-01",
-    "fin": "2024-03-13",
-    "responsable": "snoopy",
-    "prioridad": "urgente"
-  }
-],
-  "cumplidas": [
-    {
-      "id": "dc31",
-      "tarea": "pendientes",
+      "id": "313a",
+      "tarea": "Desarrollar prototipo de interfaz de usuario para nueva aplicación móvil",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "lukas"
+      "responsable": "Diego Martínez",
+      "prioridad": "noUrgente"
     },
     {
-      "id": "3b81",
-      "tarea": "prueba",
+      "id": "fe01",
+      "tarea": "Implementar mejoras de seguridad en infraestructura de red de la empresa.",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "snoopy"
+      "responsable": "Ana Pérez",
+      "prioridad": "noUrgente"
+    }
+  ],
+  "cumplidas": [
+    {
+      "id": "35d0",
+      "tarea": "Realizar pruebas de rendimiento en servidor de aplicaciones web.",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Laura Fernández",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "1b6d",
+      "tarea": "Configurar sistema de copias de seguridad automáticas para bases de datos.",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Laura Fernández",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "7d9a",
+      "tarea": "Investigar y seleccionar proveedores de servicios de alojamiento en la nube.",
+      "inicio": "2023-01-10",
+      "fin": "2024-03-28",
+      "responsable": "Ana Pérez",
+      "prioridad": "urgente"
     }
   ],
   "fallidas": [
     {
-      "id": "35ae",
-      "tarea": "Lukas",
+      "id": "46f3",
+      "tarea": "Actualizar documentación técnica de API de integración de datos.",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "lukas"
+      "responsable": "Ana Pérez",
+      "prioridad": "noUrgente"
     },
     {
-      "id": "1891",
-      "tarea": "tal otro",
+      "id": "f5be",
+      "tarea": "Realizar análisis de datos para identificar tendencias en el comportamiento del usuario.",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "tony",
+      "responsable": "Diego Martínez",
+      "prioridad": "noUrgente"
+    },
+    {
+      "id": "f8b2",
+      "tarea": "Realizar pruebas de usabilidad en prototipo de nueva funcionalidad del software.",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Ana Pérez",
       "prioridad": "urgente"
     }
   ]

@@ -10,11 +10,6 @@
   </head>
   <body>
     <header>
-      <!-- <ul>
-        <li id="pendientes">Tareas pendientes</li>
-        <li id="cumplidas">Tareas cumplidas</li>
-        <li id="fallidas">Tareas fallidas</li>
-      </ul> -->
       <button class="mostarModal" ><i class='bx bx-plus'></i>Nueva tarea</button>
     </header>
     <dialog >
@@ -39,14 +34,14 @@
           </div>
           <label for="responsable">Responsable</label>
           <select name="responsable" id="responsable" class="responsable">
-            <option value="lukas" selected>lukas</option>
-            <option value="tony">tony</option>
-            <option value="snoopy">snoopy</option>
+            <option value="Diego Martínez" selected>Diego Martínez</option>
+            <option value="Laura Fernández">Laura Fernández</option>
+            <option value="Ana Pérez">Ana Pérez</option>
           </select>
           <div class="prioridad">
             <div>
               <label for="urg">Urgene:</label>
-              <input type="radio" name="prioridad" value="urgente" id="urg" />
+              <input type="radio" name="prioridad" value="urgente" id="urg" checked />
             </div>
             <div>
               <label for="nurg">No urgente</label>
@@ -54,7 +49,7 @@
             </div>
           </div>
           <div class="botones">
-            <button class="btn cancelar">Cancelar</button>
+            <span class="btn cancelar">Cancelar</span>
             <input class="btn guardar" type="submit" value="Registrar tarea"></input>
           </div>
         </form>
@@ -88,7 +83,7 @@
       </section>
       <section class="cumplidas-fallidas">
         <section class="cumplidas">
-          <h3>Complidas</h3>
+          <h3>Cumplidas</h3>
           <section class="tasks" id="tasksOk">
           </section>
         </section>

@@ -29,8 +29,8 @@ const postData = (data, endpoint) => {
   }).catch((error) => console.log(error));
 };
 
-const deleteData = (id) => {
-  fetch(`${URL_API}/pendientes/${id}`, {
+const deleteData = (endpoint, id) => {
+  fetch(`${URL_API}/${endpoint}/${id}`, {
     method: "DELETE",
     headers: myHeader,
   })
@@ -69,5 +69,5 @@ export {
   getData as getData,
   postData as postData,
   deleteData as deleteData,
-  getOneData
+  getOneData,
 };

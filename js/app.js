@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tasks = await getData("pendientes");
   const tasksEnded = await getData("cumplidas");
   const tasksFailed = await getData("fallidas");
-
   const success = document.querySelector("#tasksOk");
   const fail = document.querySelector("#tasksFaild");
 
@@ -81,7 +80,7 @@ function filterTaskd(contenedor, tareas) {
       <small><span class="span-prioridad ${
         item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
       } ">${item.prioridad}</span></small>
-      
+      <i class='bx bxs-trash delete' id="${item.id}"></i>
     </div>
     <p class="textTask">${item.tarea}</p>
     <div class="inicio-fin">
@@ -105,21 +104,47 @@ function filterTaskd(contenedor, tareas) {
 
 async function detectarBoton(e) {
   if (e.target.classList.contains("btnEnded")) {
-    const id = e.target.id;
-    console.log(id);
-    const resultado = await getOne(id);
-    console.log(resultado);
-    postData(resultado, "cumplidas");
-    deleteData(id);
+    let preguntar = confirm("¿Está seguro de la acción que va a realizar?");
+    if (preguntar) {
+      const id = e.target.id;
+      const resultado = await getOne(id);
+      postData(resultado, "cumplidas");
+      deleteData("pendientes", id);
+    }
   } else if (e.target.classList.contains("btnFailed")) {
-    const id = e.target.id;
-    const resultado = await getOne(id);
-    console.log(resultado);
-    postData(resultado, "fallidas");
-    deleteData(id);
+    let preguntar = confirm("¿Está seguro de la acción que va a realizar?");
+    if (preguntar) {
+      const id = e.target.id;
+      const resultado = await getOne(id);
+      postData(resultado, "fallidas");
+      deleteData("pendientes", id);
+    }
   }
 }
+
+const success = document.querySelector("#tasksOk");
+success.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete")) {
+    let id = e.target.id;
+    confirmar("cumplidas", id);
+  }
+});
+
+const fail = document.querySelector("#tasksFaild");
+fail.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete")) {
+    let id = e.target.id;
+    confirmar("fallidas", id);
+  }
+});
 
 async function getOne(id) {
   return await getOneData(id);
 }
+
+const confirmar = (endpoint, id) => {
+  const respuesta = confirm("¿Está seguro que desea eliminar esta tarea?");
+  if (respuesta) {
+    deleteData(endpoint, id);
+  }
+};

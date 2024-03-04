@@ -16,6 +16,7 @@ header{
 main{
     min-height: 100vh;
     padding: 0 20px;
+    margin-bottom: 50px;
 }
 
 dialog {
@@ -254,4 +255,12 @@ h3{
     margin-bottom: 20px;
 }
 
-/* https://themes.getbootstrap.com/preview/?theme_id=23693 */
+.delete{
+    font-size: 17px !important;
+    color: red;
+    transition: all ease 0.5s;
+}
+
+.delete:hover{
+    scale: 1.2;
+}

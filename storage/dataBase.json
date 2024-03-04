@@ -1,64 +1,15 @@
 {
   "pendientes": [
     {
-      "id": "299a",
-      "tarea": "Sin asignar ",
+      "id": "7699",
+      "tarea": "Validar petición ",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "Diego Martínez",
+      "responsable": "Ana Pérez",
       "prioridad": "urgente"
     }
   ],
   "cumplidas": [
-    {
-      "id": "35d0",
-      "tarea": "Realizar pruebas de rendimiento en servidor de aplicaciones web.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Laura Fernández",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "1b6d",
-      "tarea": "Configurar sistema de copias de seguridad automáticas para bases de datos.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Laura Fernández",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "7d9a",
-      "tarea": "Investigar y seleccionar proveedores de servicios de alojamiento en la nube.",
-      "inicio": "2023-01-10",
-      "fin": "2024-03-28",
-      "responsable": "Ana Pérez",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "4a23",
-      "tarea": "Ir a comer algo ",
-      "inicio": "2023-01-02",
-      "fin": "2024-03-05",
-      "responsable": "Laura Fernández",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "b7b5",
-      "tarea": "bla bla bla",
-      "inicio": "2023-01-12",
-      "fin": "2024-03-20",
-      "responsable": "Ana Pérez",
-      "prioridad": "noUrgente"
-    },
-    {
-      "id": "fe01",
-      "tarea": "Implementar mejoras de seguridad en infraestructura de red de la empresa.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Ana Pérez",
-      "prioridad": "noUrgente",
-      "estado": "cumplidas"
-    },
     {
       "id": "f031",
       "tarea": "Cumplida",
@@ -78,59 +29,11 @@
   ],
   "fallidas": [
     {
-      "id": "46f3",
-      "tarea": "Actualizar documentación técnica de API de integración de datos.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Ana Pérez",
-      "prioridad": "noUrgente"
-    },
-    {
-      "id": "f5be",
-      "tarea": "Realizar análisis de datos para identificar tendencias en el comportamiento del usuario.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Diego Martínez",
-      "prioridad": "noUrgente"
-    },
-    {
-      "id": "f8b2",
-      "tarea": "Realizar pruebas de usabilidad en prototipo de nueva funcionalidad del software.",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Ana Pérez",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "313a",
-      "tarea": "Desarrollar prototipo de interfaz de usuario para nueva aplicación móvil",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Diego Martínez",
-      "prioridad": "noUrgente"
-    },
-    {
       "id": "70b2",
       "tarea": "gfdgfg",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
       "responsable": "Laura Fernández",
-      "prioridad": "noUrgente"
-    },
-    {
-      "id": "f223",
-      "tarea": "NO hacer nada",
-      "inicio": "2023-01-26",
-      "fin": "2024-03-27",
-      "responsable": "Laura Fernández",
-      "prioridad": "urgente"
-    },
-    {
-      "id": "972c",
-      "tarea": "nada",
-      "inicio": "2023-01-01",
-      "fin": "2024-03-02",
-      "responsable": "Ana Pérez",
       "prioridad": "noUrgente"
     },
     {
@@ -140,14 +43,6 @@
       "fin": "2024-03-02",
       "responsable": "Laura Fernández",
       "prioridad": "urgente"
-    },
-    {
-      "id": "c629",
-      "tarea": "Fallida",
-      "inicio": "2023-01-12",
-      "fin": "2024-03-15",
-      "responsable": "Ana Pérez",
-      "prioridad": "noUrgente"
     }
   ]
 }

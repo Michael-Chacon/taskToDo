@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const success = document.querySelector("#tasksOk");
   const fail = document.querySelector("#tasksFaild");
 
-  filterTaskd(success, tasksEnded);
-  filterTaskd(fail, tasksFailed);
+  filterTaskd(success, "cumplidas", tasksEnded);
+  filterTaskd(fail, "fallidas", tasksFailed);
   showTask(tasks);
 });
 
@@ -71,10 +71,10 @@ function showTask(data) {
   });
 }
 
-function filterTaskd(contenedor, tareas) {
+function filterTaskd(contenedor, endpoint, tareas) {
   tareas.forEach((item) => {
     contenedor.innerHTML += `
-    <article class="card tar-fallidas">
+    <article class="card ${endpoint === "fallidas"?"tar-fallidas":"tar-cumplidas"}">
     <div class="opciones">
      
       <small><span class="span-prioridad ${

@@ -69,5 +69,5 @@ export {
   getData as getData,
   postData as postData,
   deleteData as deleteData,
-  getOneData,
+  getOneData
 };

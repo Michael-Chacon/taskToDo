@@ -3,15 +3,17 @@ import { postData } from "../Api/core.js";
 import { deleteData } from "../Api/core.js";
 import { getOneData } from "../Api/core.js";
 
-const mostraDialog = document.querySelector(".mostarModal");
 const dialog = document.querySelector("dialog");
+
+const mostraDialog = document.querySelector(".mostarModal");
 mostraDialog.addEventListener("click", () => {
   dialog.showModal();
 });
-const cerrarDialog = document.querySelector(".cancelar")
+
+const cerrarDialog = document.querySelector(".cancelar");
 cerrarDialog.addEventListener("click", () => {
-  dialog.close()
-})
+  dialog.close();
+});
 
 document.addEventListener("DOMContentLoaded", async () => {
   const tasks = await getData("pendientes");
@@ -26,11 +28,10 @@ const form = document.querySelector("#formulario");
 form.addEventListener("submit", obtenerDatos);
 
 function obtenerDatos(e) {
-  e.stopImmediatePropagation();
   e.preventDefault();
   const dataForm = new FormData(form);
-  const tal = Object.fromEntries(dataForm);
-  postData(tal, "pendientes");
+  const datos = Object.fromEntries(dataForm);
+  postData(datos, "pendientes");
 }
 
 const cards = document.querySelector(".cards");
@@ -38,10 +39,10 @@ cards.addEventListener("click", detectarBoton);
 
 function showTask(data) {
   data.forEach((item) => {
-    cards.innerHTML += `
+    cards.innerHTML += /*html*/`
     <article class="card">
     <div class="opciones">
-      <i class='bx bx-check btnEnded' id="${item.id}"></i>
+      <i class='bx bx-check btnEnde' id="${item.id}"></i>
       <small><span class="span-prioridad ${
         item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
       } ">${item.prioridad}</span></small>

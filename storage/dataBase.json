@@ -1,13 +1,12 @@
 {
   "pendientes": [
     {
-      "id": "fe01",
-      "tarea": "Implementar mejoras de seguridad en infraestructura de red de la empresa.",
+      "id": "299a",
+      "tarea": "Sin asignar ",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
-      "responsable": "Ana Pérez",
-      "prioridad": "noUrgente",
-      "estado": "cumplidas"
+      "responsable": "Diego Martínez",
+      "prioridad": "urgente"
     }
   ],
   "cumplidas": [
@@ -50,6 +49,31 @@
       "fin": "2024-03-20",
       "responsable": "Ana Pérez",
       "prioridad": "noUrgente"
+    },
+    {
+      "id": "fe01",
+      "tarea": "Implementar mejoras de seguridad en infraestructura de red de la empresa.",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Ana Pérez",
+      "prioridad": "noUrgente",
+      "estado": "cumplidas"
+    },
+    {
+      "id": "f031",
+      "tarea": "Cumplida",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Ana Pérez",
+      "prioridad": "noUrgente"
+    },
+    {
+      "id": "1331",
+      "tarea": "bien",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Diego Martínez",
+      "prioridad": "urgente"
     }
   ],
   "fallidas": [
@@ -106,6 +130,22 @@
       "tarea": "nada",
       "inicio": "2023-01-01",
       "fin": "2024-03-02",
+      "responsable": "Ana Pérez",
+      "prioridad": "noUrgente"
+    },
+    {
+      "id": "12fa",
+      "tarea": "Fallida",
+      "inicio": "2023-01-01",
+      "fin": "2024-03-02",
+      "responsable": "Laura Fernández",
+      "prioridad": "urgente"
+    },
+    {
+      "id": "c629",
+      "tarea": "Fallida",
+      "inicio": "2023-01-12",
+      "fin": "2024-03-15",
       "responsable": "Ana Pérez",
       "prioridad": "noUrgente"
     }

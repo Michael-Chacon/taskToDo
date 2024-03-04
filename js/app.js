@@ -19,9 +19,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tasks = await getData("pendientes");
   const tasksEnded = await getData("cumplidas");
   const tasksFailed = await getData("fallidas");
+
+  const success = document.querySelector("#tasksOk");
+  const fail = document.querySelector("#tasksFaild");
+
+  filterTaskd(success, tasksEnded);
+  filterTaskd(fail, tasksFailed);
   showTask(tasks);
-  showTasksEnded(tasksEnded);
-  showTaskFailded(tasksFailed);
 });
 
 const form = document.querySelector("#formulario");
@@ -39,10 +43,10 @@ cards.addEventListener("click", detectarBoton);
 
 function showTask(data) {
   data.forEach((item) => {
-    cards.innerHTML += /*html*/`
+    cards.innerHTML += /*html*/ `
     <article class="card">
     <div class="opciones">
-      <i class='bx bx-check btnEnde' id="${item.id}"></i>
+      <i class='bx bx-check btnEnded' id="${item.id}"></i>
       <small><span class="span-prioridad ${
         item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
       } ">${item.prioridad}</span></small>
@@ -68,40 +72,9 @@ function showTask(data) {
   });
 }
 
-const success = document.querySelector("#tasksOk");
-function showTasksEnded(data) {
-  data.forEach((item) => {
-    success.innerHTML += `
-    <article class="card tar-cumplidas">
-    <div class="opciones">
-      <small><span class="span-prioridad ${
-        item.prioridad === "urgente" ? "span-urgente" : "span-noUrgente"
-      } ">${item.prioridad}</span></small>
-    </div>
-    <p class="textTask">${item.tarea}</p>
-    <div class="inicio-fin">
-        <div class="texto-fechas">
-          <p>Inicio</p>
-          <p>${item.inicio}</p>
-        </div>
-        <div class="texto-fechas">
-          <p>Fin</p>
-          <p>${item.fin}</p>
-        </div>
-    </div>
-    <div class="info-responsable">
-      <p>${item.responsable}</p>
-      <img src="storage/img/foto.jpg" alt="" class="foto">
-    </div>
-  </article>
-    `;
-  });
-}
-
-const fail = document.querySelector("#tasksFaild");
-function showTaskFailded(data) {
-  data.forEach((item) => {
-    fail.innerHTML += `
+function filterTaskd(contenedor, tareas) {
+  tareas.forEach((item) => {
+    contenedor.innerHTML += `
     <article class="card tar-fallidas">
     <div class="opciones">
      
@@ -131,8 +104,6 @@ function showTaskFailded(data) {
 }
 
 async function detectarBoton(e) {
-  // const confirmacion = confirm("Seguro?");
-  // if (confirmacion) {
   if (e.target.classList.contains("btnEnded")) {
     const id = e.target.id;
     console.log(id);
@@ -147,7 +118,6 @@ async function detectarBoton(e) {
     postData(resultado, "fallidas");
     deleteData(id);
   }
-  // }
 }
 
 async function getOne(id) {
